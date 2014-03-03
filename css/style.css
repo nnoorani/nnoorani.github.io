@@ -1,0 +1,144 @@
+body,
+h1,
+.header,
+.nav,
+.nav-link,
+.info,
+.wrapper,
+table {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+body 
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+}
+
+h1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 150px;
+	margin: auto;
+	width: auto;
+	font-size: 4em;
+	font-weight: 600;
+	opacity: 0.6;
+	text-transform: uppercase;
+}
+
+.header { 
+	height: 400px;
+	background: url('images/Cali Photo.jpg') no-repeat center fixed;
+	background-size: cover;
+	opacity: 0.7;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-bottom: 5px solid #a9a9a9;
+}
+
+.top-nav {
+	display: inline-table;
+	text-align: left;
+	height: 75px;
+}
+
+.mail {	
+	position: relative;
+	top: 15px;
+	background: url('images/mail61.png') no-repeat bottom;
+	background-size: contain;
+	padding: 15px;
+	margin-left: 30px;
+}
+
+.mail:hover{
+	opacity: 0.7;
+}
+
+.nav {
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 350px;
+	-webkit-padding-start: 0px;
+	opacity: 1;
+}
+
+.nav > ul {
+	padding: 0px;
+}
+
+.nav > li {
+	padding: 0px 10px; 
+	display: inline-block;
+	list-style: none;
+	width: auto;
+}
+
+.nav > li > a {
+	display: block;
+	background-size: contain;
+	padding: 15px;
+	opacity: 0.7;
+}
+
+.nav > li > a:hover {	
+	opacity: 1;
+}
+
+.linkedin { 
+	background: url('images/linkedin.png') no-repeat center;
+}
+
+.resume { 
+	background: url('images/letter5.png');
+}
+
+.github { 
+	background: url('images/github14.png');
+}
+
+.twitter { 
+	background: url('images/twitter.png');
+}
+
+
+.wrapper { 
+	width: 100%;
+	margin: auto;
+}
+
+
+h2 {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 2em;
+	font-weight: 400;
+	margin: auto;	
+	font-family: inherit;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333; 
+	margin-top: 50px;
+}
+
+a {
+	color: #dbad60;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #608edb;
+}
+
+p {
+	width: 600px;
+	margin: 25px auto;
+	text-align: center;
+	line-height: 30px;
+}
