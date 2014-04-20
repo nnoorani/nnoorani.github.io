@@ -1,26 +1,56 @@
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald|Lato:100,300' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="shortcut icon" type="text/css" href="css/images/logo_1.png">
 </head>
 
 <body>
   <title>Noorain Noorani</title>
-  <div class="wrapper top-nav">
-  <a class='mail' href='mailto:noorain.noorani@gmail.com'></a>
+  <div class="container wrapper top-nav">
+      <!-- <img src='css/images/logo_1.png'></img> -->
+      <div class='container-fluid navigation'>
+        <h1>noorain noorani</h1>
+        <div class='links container col-md-12 col-xs-12'>
+          <a class='circle-text' href='#about'><span class='fa fa-info fa-4x'></span></a>
+          <a class='circle-text' href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github fa-4x'></span></a>
+          <a class='circle-text' href='resume/Fall 2013 Resume.html'><span class='fa fa-file fa-4x'></span></a>
+          <a class='circle-text' href='portfolio.html'><span class='fa fa-folder-o fa-4x'></span></a>
+          <a class='circle-text' href='mailto:noorain.noorani@gmail.com'><span class='fa fa-envelope fa-4x'></span></a>
+        </div>
+      </div>
   </div>
-  <div class="header">
-  </div>
-      <h1>Noorain Noorani</h1>
-    <ul class='nav wrapper'>
-      <li class='navlink'><a class='linkedin' href='http://ca.linkedin.com/in/noorainnoorani' target="_blank"></a></li>
-      <li><a class='twitter'href='http://www.twitter.com/noorainnoorani' target="_blank"></a></li>
-      <li><a class='resume' href='resume/Fall 2013 Resume.html'></a></li>
-      <li><a class='github' href='http://www.github.com/nnoorani'></a></li>
-    </ul>
-    <div class='info'>
-    <h2>About</h2>
-      <p>Hi there. My name is Noorain Noorani, and I am a 3rd year Systems Design Engineering student at the University of Waterloo. I am currently on a 4-month internship at <a href='http://www.wattpad.com'>Wattpad</a>, as a front-end developer.</p>
-      <p>I am an experienced developer and aspriring designer, seeking to challenge myself to create beautiful, usable interfaces.</p>
-      <p>Please feel free to send me a message at <a href='mailto:noorain.noorani@gmail.com'>noorain.noorani@gmail.com</a>.</p>
+    <div class='container about' id='about'>
+      <div class='header'><h2>about</h2></div>
+        <div class='photo'>
+          <img src="css/images/about-photo.png" width='300'></img>
+        </div>
+      <div class='col-md-12 center-block'>
+        <div class='col-md-10 col-md-offset-1 about-column'>
+          <p>I'm a 3rd year Systems Design Engineering student at the University of Waterloo.</br>
+            I'm a full time co-op student, with 4 work terms behind me. <b>Currently, I'm seeking a 4-month position starting in Fall 2014.</b> I'm a resident at Velocity, a startup incubator residence at Waterloo where I am an active member of the startup and entrepreunerial community in the city. My extracurriculars have included Sponsorship Executive for the Canadian Undergraduate Technology Conference, Graphic Designer for Fashion for Change at UW, Engineering Orientation Leader, Residence Student Ambassador, and Residence Council, to name a few.
+          </p>
+        </div>
+        <div class='col-md-10 col-md-offset-1'>
+          <span class='line'></span>
+          <h3>recent Projects</h3>
+          <div class='col-md-4 about-column'>
+            <img src="css/images/bonsai-logo-circle.png" width='100'>
+             <h4>Bonsai Events</h4><h5>Ongoing</h5><h6>Designer, Developer</h6><p>An event-planning service for tech startups in Toronto. We plan events to help brands and companies gain recognition in the community.</p>
+          </div>
+          <div class='col-md-4 about-column'>
+            <img src="css/images/RAOK-Logo.png" width='100'>
+          <h4>GLIDR</h4><h5>Startup Weekend Waterloo, March 2014</h5><h6>Team Member, Designer, Developer</h6><p>A responsive web-app that allows you to send small gifts to other users randomly. The idea was based off the concept of random acts of kindness.</br><b>Third Place Winner</b></p>
+        </div>
+        <div class='col-md-4 about-column'>
+          <img src="css/images/buddy-up-logo.png" width='100'>
+          <h4>Buddy Up</h4><h5>MHacks, January 2014</h5><h6>Designer, Developer</h6><p>A web-app that allows you to find people nearby that are studying the same thing as you. Allows you to get in touch and study together. </p>
+        </div>
+      </div>
+      </div>
     </div>
+
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//unslider.com/unslider.min.js"></script>
 </body>

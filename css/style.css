@@ -1,14 +1,13 @@
-body,
-h1,
-.header,
-.nav,
-.nav-link,
-.info,
-.wrapper,
-table {
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
+h3,
+h4 {
+	font-family: 'Lato', sans-serif;
+	text-transform: lowercase;
+	color: #4e0d23;
+}
+
+h4 {
+	font-weight: 100;
+	margin-top: 15px;
 }
 
 body 
@@ -18,65 +17,101 @@ body
 	margin: 0px;
 }
 
+.container {
+	text-align: center;
+}
+
+.navigation {
+	margin-top: 160px;
+}
+
+.about {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.about-column {
+	padding: 50px;
+	color: #4e0d23;
+}
+
+.header {
+	height: 100px;
+	background-color: #000;
+	width: 100%;
+	color: #fff;
+	padding: 75px;
+}
+
+.photo {
+	margin-top: 50px;
+}
+
 h1 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 150px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: lowercase;
+	color: #000;
 	margin: auto;
+	padding-top: 0px;
 	width: auto;
-	font-size: 4em;
-	font-weight: 600;
-	opacity: 0.6;
-	text-transform: uppercase;
+	font-size: 6em;
+	opacity: 0.8;
 }
 
-.header { 
-	height: 400px;
-	background: url('images/Cali Photo.jpg') no-repeat center fixed;
-	background-size: cover;
-	opacity: 0.7;
-	font-family: 'Source Sans Pro', sans-serif;
-	border-bottom: 5px solid #a9a9a9;
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 3em;
+	letter-spacing: 5px;
+	margin: auto;	
+	color: #4e0d23;
 }
 
-.top-nav {
-	display: inline-table;
-	text-align: left;
-	height: 75px;
-}
-
-.mail {	
-	position: relative;
-	top: 15px;
-	background: url('images/mail61.png') no-repeat bottom;
-	background-size: contain;
-	padding: 15px;
-	margin-left: 30px;
-}
-
-.mail:hover{
-	opacity: 0.7;
-}
-
-.nav {
+.line {
+	background: #FFB03B;
+	height: 2px;
 	display: block;
-	position: absolute;
-	margin: auto;
-	top: 350px;
-	-webkit-padding-start: 0px;
-	opacity: 1;
+	width: 10%;
+	margin: 10px auto;
+}
+.links {
+	text-align: center;
+	margin-top: 40px;
 }
 
-.nav > ul {
-	padding: 0px;
-}
 
-.nav > li {
-	padding: 0px 10px; 
+.links > a {
+	background-color: #000;
+	opacity: 0.8;	
 	display: inline-block;
 	list-style: none;
-	width: auto;
+	margin: 0px 5px;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    width: 15%;
+    position: relative;
+	width: 10%;
+	height: 0;
+	padding: 5% 0;
+	border-radius: 50%;
+	line-height: 0;
+	text-align: center;
+}
+
+.links > a > span {
+    float:left;
+    width:100%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+}
+
+a:hover {
+	color: #4e0d23;
 }
 
 .nav > li > a {
@@ -86,45 +121,12 @@ h1 {
 	opacity: 0.7;
 }
 
-.nav > li > a:hover {	
-	opacity: 1;
-}
-
-.linkedin { 
-	background: url('images/linkedin.png') no-repeat center;
-}
-
-.resume { 
-	background: url('images/letter5.png');
-}
-
-.github { 
-	background: url('images/github14.png');
-}
-
-.twitter { 
-	background: url('images/twitter.png');
-}
-
-
 .wrapper { 
 	width: 100%;
+	height: 800px;
 	margin: auto;
-}
-
-
-h2 {
-	display: inline-block;
-	padding: 10px;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 2em;
-	font-weight: 400;
-	margin: auto;	
-	font-family: inherit;
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333; 
-	margin-top: 50px;
+	background: url('images/galaxy.jpg')  no-repeat center center;
+	background-size: cover;
 }
 
 a {
@@ -132,13 +134,21 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: #608edb;
-}
-
 p {
-	width: 600px;
-	margin: 25px auto;
 	text-align: center;
 	line-height: 30px;
+	color: #333;
+}
+
+@media (max-width: 767px) {
+	.links a {
+		width: 25%;
+		padding: 12.5% 0;
+	}
+
+	div.container.about > div.photo > img{
+		-webkit-transition: all 1s linear 2s; /* For Safari 3.1 to 6.0 */
+		transition: all 1s linear 2s;
+		width: 200px;
+	}
 }
