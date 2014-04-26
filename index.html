@@ -1,6 +1,7 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Oswald|Lato:100,300' rel='stylesheet' type='text/css'>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="shortcut icon" type="text/css" href="css/images/logo_1.png">
@@ -12,45 +13,69 @@
       <!-- <img src='css/images/logo_1.png'></img> -->
       <div class='container-fluid navigation'>
         <h1>noorain noorani</h1>
+        <h2>front-end developer and designer</h2>
         <div class='links container col-md-12 col-xs-12'>
-          <a class='circle-text' href='#about'><span class='fa fa-info fa-4x'></span></a>
-          <a class='circle-text' href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github fa-4x'></span></a>
-          <a class='circle-text' href='resume/Fall 2013 Resume.html'><span class='fa fa-file fa-4x'></span></a>
-          <a class='circle-text' href='portfolio.html'><span class='fa fa-folder-o fa-4x'></span></a>
-          <a class='circle-text' href='mailto:noorain.noorani@gmail.com'><span class='fa fa-envelope fa-4x'></span></a>
+          <a class='circle-text fadeIn' href='#about'><span class='fa fa-info fa-2x'></span></a>
+          <a class='circle-text fadeIn' href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github fa-2x'></span></a>
+          <a class='circle-text fadeIn' href='resume/Fall 2013 Resume.html'><span class='fa fa-file fa-2x'></span></a>
+          <a class='circle-text fadeIn' href='portfolio.html'><span class='fa fa-folder-o fa-2x'></span></a>
+          <a class='circle-text fadeIn' href='mailto:noorain.noorani@gmail.com'><span class='fa fa-envelope fa-2x'></span></a>
         </div>
+        <a href='#about'>let me tell you more</br><img style='padding-top:40px;'class='floating' src='css/images/arrow398.png' width='25' id='scrollDown'></img></a>
       </div>
   </div>
-    <div class='container about' id='about'>
-      <div class='header'><h2>about</h2></div>
-        <div class='photo'>
-          <img src="css/images/about-photo.png" width='300'></img>
-        </div>
-      <div class='col-md-12 center-block'>
-        <div class='col-md-10 col-md-offset-1 about-column'>
-          <p>I'm a 3rd year Systems Design Engineering student at the University of Waterloo.</br>
-            I'm a full time co-op student, with 4 work terms behind me. <b>Currently, I'm seeking a 4-month position starting in Fall 2014.</b> I'm a resident at Velocity, a startup incubator residence at Waterloo where I am an active member of the startup and entrepreunerial community in the city. My extracurriculars have included Sponsorship Executive for the Canadian Undergraduate Technology Conference, Graphic Designer for Fashion for Change at UW, Engineering Orientation Leader, Residence Student Ambassador, and Residence Council, to name a few.
-          </p>
-        </div>
-        <div class='col-md-10 col-md-offset-1'>
-          <span class='line'></span>
-          <h3>recent Projects</h3>
-          <div class='col-md-4 about-column'>
-            <img src="css/images/bonsai-logo-circle.png" width='100'>
-             <h4>Bonsai Events</h4><h5>Ongoing</h5><h6>Designer, Developer</h6><p>An event-planning service for tech startups in Toronto. We plan events to help brands and companies gain recognition in the community.</p>
-          </div>
-          <div class='col-md-4 about-column'>
-            <img src="css/images/RAOK-Logo.png" width='100'>
-          <h4>GLIDR</h4><h5>Startup Weekend Waterloo, March 2014</h5><h6>Team Member, Designer, Developer</h6><p>A responsive web-app that allows you to send small gifts to other users randomly. The idea was based off the concept of random acts of kindness.</br><b>Third Place Winner</b></p>
-        </div>
-        <div class='col-md-4 about-column'>
-          <img src="css/images/buddy-up-logo.png" width='100'>
-          <h4>Buddy Up</h4><h5>MHacks, January 2014</h5><h6>Designer, Developer</h6><p>A web-app that allows you to find people nearby that are studying the same thing as you. Allows you to get in touch and study together. </p>
-        </div>
+  <div class='container about' id='about'>
+    <div class='header'><h2>about me</h2></div>
+      <div class='photo'>
+        <img id='me' src="css/images/about-photo.png" width='300'></img>
       </div>
+    <div class='col-md-12 center-block'>
+      <div class='col-md-10 col-md-offset-1 about-column'>
+        <p>I'm a 3rd year Systems Design Engineering student at the University of Waterloo.</br>I'm a front-end developer with 2 years of experiene working at different companies. I am creative. What excites me most is creating interfaces that are useful, usable and beautiful. I strive to excel at blending innovative web technologies with creativity and good design.</p></br>
+          <p>I'm a full time co-op student, with 4 work terms behind me. <b>Currently, I'm seeking a 4-month position starting in Fall 2014.</b> I'm a resident at Velocity, a startup incubator residence at Waterloo where I am an active member of the startup and entrepreunerial community in the city.
+        </p>
+        <a class='box'>see my resume</a>
       </div>
     </div>
+  </div>
+  <div class='container about projects'>
+    <div class='col-md-10 col-md-offset-1' id='projects'>
+      <h3>recent projects</h3>
+      <div class='col-md-4 about-column'>
+        <img src="css/images/bonsai-logo-circle.png" width='100'>
+         <a href='http://bonsaievents.github.io'><h4>Bonsai Events</h4></a><h5>Ongoing</h5><h6>Designer, Developer</h6><p>An event-planning service for tech startups in Toronto. We plan events to help brands and companies gain recognition in the community.</p>
+      </div>
+      <div class='col-md-4 about-column'>
+        <img src="css/images/RAOK-Logo.png" width='100'>
+        <a href='http://app.glidr.ca'><h4>GLIDR</h4></a><h5>Startup Weekend Waterloo, March 2014</h5><h6>Team Member, Designer, Developer</h6><p>A responsive web-app that allows you to send small gifts to other users randomly. The idea was based off the concept of random acts of kindness.</br><b>Third Place Winner</b></p>
+      </div>
+      <div class='col-md-4 about-column'>
+        <img src="css/images/buddy-up-logo.png" width='100'>
+        <a href='http://budyup.herokuapp.com'><h4>Buddy Up</h4></a><h5>MHacks, January 2014</h5><h6>Designer, Developer</h6><p>A web-app that allows you to find people nearby that are studying the same thing as you. Allows you to get in touch and study together. </p>
+      </div>
+    </div>
+  </div>
+  <div class='container blog'>
+    <div class='header'><h2>blog</h2></div>
+    <div class='col-md-10 col-md-offset-1 about-column'>
+        <p>The Internet has become a giant pool of knowledge, opinions, and information. One thing that fascinates me most about the tech space is people's willingness to share and contribute. Open-source projects, meetups, clubs etc. - all focused around this idea of sharing knowledge and learning from those around you.</br></br>
+          Blogging has always been one of those things I ran from. Putting my thoughts into words and then putting them on the Internet was nerve wracking. But after an amazing term at work, this fascination has pushed me forward to try yet another new endeavour. Enjoy, and let me know your thoughts.</p>
+          <a class='box' href='http://nnoorani.svbtle.com/'>read</a>
+      </div>
+    </div>
+  </div>
 
-    <script src="//code.jquery.com/jquery-latest.min.js"></script>
-    <script src="//unslider.com/unslider.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script>
+    $(window).scroll(function() {
+      $('.about-column').each(function() {
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+500) {
+          $(this).addClass("fadeIn");
+        }
+      });
+    });
+  </script>
 </body>
