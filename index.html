@@ -1,7 +1,8 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/animations.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
   <link href="css/component.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Oswald|Lato:100,300' rel='stylesheet' type='text/css'>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -11,117 +12,129 @@
 
 <body>
   <title>Noorain Noorani</title>
-  <div class="container wrapper top-nav" data-stellar-background-ratio="1.3">
+  <div class="container wrapper top-nav">
       <!-- <img src='css/images/logo_1.png'></img> -->
-      <div class='container-fluid navigation'>
-        <h1>noorain noorani</h1>
-        <h2>front-end developer and designer</h2>
-        <!-- <div class='links container col-md-12 col-xs-12'>
-          <a class='circle-text fadeIn' href='#about'><span class='fa fa-info-circle fa-4x'></span></a>
-          <a class='circle-text fadeIn' href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github fa-4x'></span></a>
-          <a class='circle-text fadeIn' href='resume/Fall 2013 Resume.html'><span class='fa-2x fa-stack'><span class='fa fa-circle fa-stack-2x'></span><span class='fa fa-file fa-inverse fa-stack-1x'></span></span></a>
-          <a class='circle-text fadeIn' href='portfolio.html'><span class='fa-2x fa-stack'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-folder fa-inverse fa-stack-1x'></i></span></a>
-          <a class='circle-text fadeIn' href='mailto:noorain.noorani@gmail.com'><span class='fa-2x fa-stack'><span class='fa fa-circle fa-stack-2x'></span><span class='fa fa-envelope fa-inverse fa-stack-1x'></span></span></a>
-        </div> -->
-        <a id='more' href='#about'><img style='padding-top:40px;'class='floating' src='css/images/arrow398.png' width='25' id='scrollDown'></img></a>
-      </div>
-  </div>
-  <!-- <div class='container about projects'>
-    <div class='col-md-10 col-md-offset-1' id='projects'>
-      <h3>recent projects</h3>
-      <div class='col-md-4 about-column'>
-        <img src="css/images/bonsai-logo-circle.png" width='100'>
-         <a href='http://bonsaievents.github.io'><h4>Bonsai Events</h4></a><h5>Ongoing</h5><h6>Designer, Developer</h6><p>An event-planning service for tech startups in Toronto. We plan events to help brands and companies gain recognition in the community.</p>
-      </div>
-      <div class='col-md-4 about-column'>
-        <img src="css/images/RAOK-Logo.png" width='100'>
-        <a href='http://app.glidr.ca'><h4>GLIDR</h4></a><h5>Startup Weekend Waterloo, March 2014</h5><h6>Team Member, Designer, Developer</h6><p>A responsive web-app that allows you to send small gifts to other users randomly. The idea was based off the concept of random acts of kindness.</br><b>Third Place Winner</b></p>
-      </div>
-      <div class='col-md-4 about-column'>
-        <img src="css/images/buddy-up-logo.png" width='100'>
-        <a href='http://budyup.herokuapp.com'><h4>Buddy Up</h4></a><h5>MHacks, January 2014</h5><h6>Designer, Developer</h6><p>A web-app that allows you to find people nearby that are studying the same thing as you. Allows you to get in touch and study together. </p> 
+    <div class='container-fluid navigation'>
+      <h1>noorain noorani</h1>
+      <h2>Front-end Developer and UX/UI Designer</h2>
+      <div class='links container col-md-12 col-xs-12'>
+        <a class='circle-text fadeIn' href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github fa-3x'></span></a>
+        <a class='circle-text fadeIn' href='mailto:noorain.noorani@gmail.com'><span class='fa fa-envelope fa-3x'></span></a>
+        <a class='circle-text fadeIn' href='http://www.twitter.com/noorainnoorani' target='_blank'><span class='fa fa-twitter fa-3x'></span></a>
+        <a class='circle-text fadeIn' href='http://www.linkedin.com/noorainnoorani' target='_blank'><span class='fa fa-linkedin fa-3x'></span></a>
       </div>
     </div>
-  </div> -->
+  </div>
+  <div class='banner'  data-stellar-background-ratio="0.5"></div>
   <div class='container portfolio'>
-    <div class='header'><h3>portfolio</h3></div>
-    <div class='col-md-10 col-md-offset-1 about-column'>
-      <p>Here are some examples of my work, related to both design and front-end development. Please acknowledge credits to the designer where the work was not my own.</p>
+    <h3>My Work</h3>
+    <span class='line'></span>
+    <div class='col-md-8 col-md-offset-2 about-column animate'>
+      <p>I like creating stuff that people like to see and use. Here's some of the stuff I've done.</p>
     </div>
     <ul id="og-grid" class="og-grid">
+      <!-- <li>
+        <a href="http://app.glidr.ca" target='_blank' data-largesrc="css/images/glidr-login-mobile.jpg" data-title="GLIDR" data-description="Glidr was the third place winner of Startup Weekend Waterloo 2014. As the primary designer and developer, I came up with the logo concept and design, the login screen design as well as the main app design. Additional features were also prototyped as can be seen on the details page. The app concept, minimum viable products, business model were pitched in less than 48 hours in front of a panel of judges, including the mayor of Waterloo. I developed the front-end for the app to be demo functional within the weekend and enhanced the design and concept in later days.">
+          <img style='border-radius:50%' src="css/images/RAOK-logo.png" width='250' alt="img01"/>
+        </a>
+      </li>
       <li>
         <a href="http://app.glidr.ca" target='_blank' data-largesrc="css/images/glidr-login-mobile.jpg" data-title="GLIDR" data-description="Glidr was the third place winner of Startup Weekend Waterloo 2014. As the primary designer and developer, I came up with the logo concept and design, the login screen design as well as the main app design. Additional features were also prototyped as can be seen on the details page. The app concept, minimum viable products, business model were pitched in less than 48 hours in front of a panel of judges, including the mayor of Waterloo. I developed the front-end for the app to be demo functional within the weekend and enhanced the design and concept in later days.">
-          <img src="css/images/glidr-thumbnail.jpg" alt="img01"/>
+          <img style='border-radius:50%' src="css/images/RAOK-logo.png" width='250' alt="img01"/>
+        </a>
+      </li>  -->
+      <li>
+        <a href="http://budyup.herokuapp.com" target='_blank' data-largesrc="css/images/glidr-login-mobile.jpg" data-title="GLIDR" data-description="Glidr was the third place winner of Startup Weekend Waterloo 2014. As the primary designer and developer, I came up with the logo concept and design, the login screen design as well as the main app design. Additional features were also prototyped as can be seen on the details page. The app concept, minimum viable products, business model were pitched in less than 48 hours in front of a panel of judges, including the mayor of Waterloo. I developed the front-end for the app to be demo functional within the weekend and enhanced the design and concept in later days.">
+          <img style='border-radius:50%' src="css/images/RAOK-logo.png" width='250' alt="img01"/>
         </a>
       </li>
       <li>
         <a href="http://bonsaievents.github.io" data-largesrc="css/images/web-design.jpg" data-title="Bonsai Events" data-description="Bonsai Events was a project started by a friend and I during our 4th work terms. As students working in Toronto and interested in the startup space, we found a disconnection amongst major players in the startup community and felt a lack of face-to-face interaction between startups and their audiences. We set out to help plan events to bring these two parties together. As we met with more people, we developed the idea further. Visit the details page to see our journey.
       </br></br>
         My role in this team is primarily as the designer and developer for the site, as well as assistance in ideation and planning. ">
-          <img src="css/images/bonsai-events-square.jpg" width='250' alt="img02"/>
+          <img style='border-radius:50%;border: 2px solid #000' src="css/images/bonsai-logo-circle.png" width='250' alt="img02"/>
         </a>
       </li>
       <li>
         <a href="http://www.wattpad.com/after" data-largesrc="css/images/after.jpg" data-title="After" data-description="After was a page I worked on during my work term at Wattpad. It is the landing page part of a campaign for one of the most popular writers on the Wattpad platform. I was the front-end developer for the site, with the design given by Helen Co at Wattpad.
       </br></br>
         The development of the site is an example of my expertise with CSS3 transitions and jQuery, as well as my ability to develop smooth and slick web interfaces.">
-          <img src="css/images/after.jpg" width='250' alt="img02"/>
+          <img style='border-radius:50%' src="css/images/after.jpg" width='250' alt="img02"/>
         </a>
       </li>
     </ul>
-    <a class='box' href='resume/resume-fall-2014-4.pdf'>see my resume</a>
   </div>
   <div class='container about' id='about'>
-    <div class='header'><h3>about me</h3></div>
+  <h3>about me</h3>
+  <span class='line'></span>
       <div class='photo'>
         <img id='me' src="css/images/about-photo.png" width='300'></img>
       </div>
     <div class='col-md-12 center-block'>
       <div class='col-md-8 col-md-offset-2 about-column'>
-        <p>I am a front-end developer with 2 years of experiene working at different companies. I am creative.  I strive to create interfaces that are useful, usable and beautiful. What excites me most is being able to combine quality design with cutting edge technologies.</p></br>
+        <p>I am a front-end developer with 2 years of hands-on experience. I am creative.  I strive to create interfaces that are useful, usable and beautiful. What excites me most is being able to combine quality design with cutting edge technologies.</p></br>
+        <a class='link-box' href='resume/resume-fall-2014-4.pdf'>see my resume</a>
+        <a class='link-box' href='#contact'>get in touch</a>
       </div>
     </div>
-  </div>
-  <div class='container blog'>
-    <div class='header'><h3>blog</h3></div>
-<!--     <p>
-    <svg>
-      <rect width="200" height="200" fill="slategrey">
-      <animateTransform attributeName="transform" type="scale" from="0" to="1" dur="3s"/>
-      </rect>
-    </svg>
-    </p> -->
-    <div class='col-md-10 col-md-offset-1 about-column'>
+    <div class='col-md-12 more-info'>
+      <div class='col-md-4 more'>
+        <img src="css/images/graduates1.png" height='150' alt="img02"/>
+        <p>I go to the University of Waterloo for <a href="https://uwaterloo.ca/systems-design-engineering/" target='_blank'>Systems Design Engineering </a>, and am currently in 3rd year. We take very versatile courses like Human Factors in Engineering, Data Structures and Algorithms, and Introduction to Design.
+      </p>
+      </div>
+      <div class='col-md-4 more'>
+        <img src="css/images/network21.png" height='150' alt="img02"/>
+        <p>I like to get involved. I've been involved with the <a href='infect.cutc.ca' target='_blank'>Canadian Undergraduate Technology Conference as a Sponsorship  Executive. Right now, I am on the Sponsorship team for <a href='hackthenorth.com' target='_blank'>Hack the North</a>, a major leaque hackathon at UWaterloo.</p>
+      </div>
+      <div class='col-md-4 more'>
+        <img src="css/images/heart92.png" height='150'alt="img02"/>
         <p>
-          Blogging has always been one of those things I ran from. Putting my thoughts into words and then putting them on the Internet was nerve wracking. But here's to trying new things. Enjoy, and let me know your thoughts.</p>
-          <a class='box' href='http://nnoorani.svbtle.com/'>read</a>
+        #FitnessEnthusiast
+        #Dancer
+        #PinterestAddict
+        #FoodLover
+        #Toronto</p>
+      </div>
+        
       </div>
     </div>
   </div>
-  <div class='container footer'>
-    <h3>let's get in touch</h3>
-    <div class='col-md-10 col-md-offset-1 social'>
-        <a href='http://twitter.com/noorainnoorani'><span class='fa fa-2x fa-twitter'></span></a>
-        <a href='http://linkedin.com/noorainnoorani'><span class='fa fa-2x fa-linkedin'></span></a>
-        <a href='http://twitter.com/noorainnoorani'><span class='fa fa-2x fa-pinterest'></span></a>
+
+  <section id="contact" class="four">
+    <div class="container social">
+        <h2>Let's Get in Touch</h2>
+        <span class='line'></span>
+        <a href='http://www.twitter.com/nnoorani' target='_blank'><span class='fa fa-twitter-square fa-inverse fa-3x'></span></a>
+        <a href='http://www.facebook.com/noorainnoorani' target='_blank'><span class='fa fa-facebook-square fa-inverse fa-3x'></span></a>
+        <a href='http://www.dribbble.com/nnoorani' target='_blank'><span class='fa fa-dribbble fa-inverse fa-3x'></span></a>
+        <a href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github-square fa-inverse fa-3x'></span></a>
+        <a href='http://ca.linkedin.com/in/noorainnoorani/' target='_blank'><span class='fa fa-linkedin-square fa-inverse fa-3x'></span></a>
+
+      
     </div>
-  </div>
+  </section>
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src='js/grid.js'></script>
   <script type="text/javascript" src='js/jquery.stellar.js'></script>
+  <script type="text/javascript" src='js/main.js'></script>
   <script>
-    $(window).stellar();
-    $(window).scroll(function() {
-      $('.about-column').each(function() {
-      var imagePos = $(this).offset().top;
-
-      var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+500) {
-          $(this).addClass("fadeIn");
-        }
-      });
-    });
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+$(window).stellar();
   </script>
   <script type="text/javascript">
   $(function() {

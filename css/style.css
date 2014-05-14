@@ -8,8 +8,8 @@ body
 
 h1 {
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
 	color: #000;
 	margin: auto;
@@ -17,8 +17,8 @@ h1 {
 	width: auto;
 	font-size: 4em;
 	opacity: 0.8;
+	letter-spacing: 20px;
 }
-
 
 h2 {
 	font-family: 'Lato', sans-serif;
@@ -32,9 +32,10 @@ h2 {
 h3,
 h4 {
 	font-family: 'Lato', sans-serif;
-	text-transform: lowercase;
-	color: #111;
-	margin: 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333;	
+	margin: 30px 0;
 }
 
 h3 {
@@ -49,13 +50,13 @@ h4 {
 p, a {
 	text-align: center;
 	line-height: 30px;
-	color: #333;
+	color: #666;
 	font-size: 1.5em;
 	font-weight: 300;	
 }
 
 a {
-	color: #333;
+	color: #FFB03B;
 	font-size: 1em;
 	text-decoration: none;
 }
@@ -69,85 +70,75 @@ a:hover {
 }
 
 .navigation {
-	margin-top: 160px;
-}
-
-.navigation h2 {
-	padding-bottom: 130px;
+	margin-top: 60px;
 }
 
 .about, .work, .blog, .portfolio, .footer {
-	padding: 0 0 30px;
+	padding: 0 0 0;
 	margin: 0;
 	width: 100%;
 }
 
-.portfolio {
-	background: url('images/ecailles_@2X.png') repeat;
+.portfolio { 
+	padding-bottom: 30px;
 }
 
-#og-grid h2, #og-grid h3 {
-	text-transform: lowercase;
-}
 .about-column {
-	padding: 50px;
+	padding: 25px;
 	color: #333;
-	visibility: hidden;
 }
 
-.header {
-	height: 100px;
-	background-color: rgba(255, 176, 59, 0.7);
-	width: 100%;
-	color: #fff;
-	box-shadow: 2px 1px 5px #ccc;
-}
-
-.header > h3 {
-	line-height: 100px
-}
-
-.photo {
+.more-info {
+	padding: 0px;
 	margin-top: 50px;
 }
 
-.box {
-	display: inline-block;
-	text-transform: uppercase;
+.more {
+	background-color: #fafafa;
+	height: 400px;
 	color: #fff;
-	margin: 15px 0px;
+	padding: 30px;
+	border-right: 1px solid #ccc;
+}
+
+.link-box {
+	background-color: #FFB03B;
+	color: #333;
+	height: 50px;
+	width: 100px;
+	margin-right: 20px;
 	padding: 13px;
-	background-color: #000;
-	border: 1px solid #FFF;
-	outline: 1px solid #000;
+	text-transform: uppercase;
 }
 
-.box:hover {
-	color: #FFB03B;
-	background-color: #000;
-	border: 1px solid #fff;
-	outline: 1px solid #000;
+.link-box:hover {
+	color: #000;
 }
 
-.line {
-	background: #FFB03B;
-	height: 2px;
-	display: block;
-	width: 10%;
-	margin: 10px auto;
+.wrapper { 
+	width: 100%;
+	min-height: 50px;
+	margin: auto;
+	overflow: hidden;
+	-webkit-transition: all 1s ease;
+	border-bottom:1px solid #eee;
 }
+
 .links {
 	text-align: center;
-	margin: 40px 0px 100px;
+	margin: 40px 0px 70px;
 }
-
 
 .links > a {
 	display: inline-block;
 	list-style: none;
-	margin: 0px 5px;
+	margin: 0px 15px;
 	color: #000;
 	text-align: center;
+}
+
+.links > a:hover {
+	color:#FFB03B;
 }
 
 .links > a > span {
@@ -156,10 +147,47 @@ a:hover {
     text-align:center;
 }
 
-.nav > li > a {
+.banner {
 	display: block;
-	background-size: contain;
-	padding: 15px;
+	width: 100%;
+	height: 150px;
+	background: url('images/76H.jpg') fixed;
+	background-size: cover;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.portfolio {
+	background-color: #f6f6f6;
+}
+
+.og-grid li a {
+	visibility: hidden;
+	margin: auto 30px;
+}
+
+.og-grid li a img{
+	-webkit-transition: all 4s;
+}
+
+.og-grid li a:hover img{
+	top: -10px;
+}
+
+.photo {
+	margin-top: 50px;
+}
+
+.line {
+	background: #FFB03B;
+	height: 2px;
+	display: block;
+	width: 10%;
+	margin: 10px auto 30px;
 }
 
 #projects {
@@ -171,28 +199,26 @@ a:hover {
 	line-height: 100px;
 	height: 100px;
 }
-.wrapper { 
-	width: 100%;
-	height: 100%;
-	background: url('images/tree-bg.jpg');
-	background-size: cover;
+
+.slider {
 	margin: auto;
 }
 
-.blog {
-	margin-top: 30px;
+#contact {
+	background-color: #333;
 }
 
-.footer {
-	margin-bottom: 30px;
-}
-
-.footer > h3 {
+#contact > div > h2 {
 	padding: 20px;
+	color: #fff;
 }
 
 .social > a {
-	padding: 0 10px;
+	padding: 10px 5px;
+}
+
+.social {
+	padding-bottom: 50px;
 }
 
 svg {
@@ -210,9 +236,10 @@ svg {
 		font-size: 1em;
 	}
 
-	.navigation h2 {
-		padding-bottom: 30px;
+	.line {
+		width: 20%;
 	}
+
 	div.container.about > div.photo > img{
 		-webkit-transition: all 1s linear 2s; /* For Safari 3.1 to 6.0 */
 		transition: all 1s linear 2s;
