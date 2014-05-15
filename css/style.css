@@ -108,7 +108,7 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.link-box a:hover, .link-box a {
+.link-box:hover, .link-box a {
 	color: #000;
 }
 
