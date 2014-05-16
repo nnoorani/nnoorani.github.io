@@ -92,6 +92,7 @@ a:hover {
 }
 
 .about-column {
+	visibility: hidden;
 	padding: 25px;
 	color: #333;
 }
