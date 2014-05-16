@@ -61,6 +61,14 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	-webkit-padding-start: 0px;
+}
+
+li {
+	list-style: none;
+}
+
 a:hover {
 	opacity: 0.9;
 	color: #FFB03B;
@@ -91,21 +99,29 @@ a:hover {
 .more-info {
 	padding: 0px;
 	margin-top: 50px;
+	background-color: #fafafa;
 }
 
 .more {
-	background-color: #fafafa;
 	color: #fff;
 	padding: 30px;
 	border-right: 1px solid #ccc;
 }
 
 .link-box {
+	display: inline-block;
+	letter-spacing: 2px;
+	min-width: 18em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
 	background-color: #FFB03B;
 	color: #333;
 	font-weight: 600;
 	padding: 13px;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .link-box:hover, .link-box a {
@@ -228,6 +244,21 @@ svg {
 @media (max-width: 767px) {
 	h1 {
 		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.more {
+		height: auto;
+		border-top: 1px solid #ccc;
+	}
+
+	.link-box {
+		width: 100%;
+		display: inline-block;
+		min-width: 20px;
 	}
 
 	.links a {
