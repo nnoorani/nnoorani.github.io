@@ -192,7 +192,7 @@ var Grid = (function() {
 		// default settings
 		settings = {
 			minHeight : 500,
-			maxHeight : 800,
+			maxHeight : 500,
 			speed : 350,
 			easing : 'ease'
 		};

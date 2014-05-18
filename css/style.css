@@ -182,15 +182,15 @@ a:hover {
 
 .og-grid li a {
 	visibility: hidden;
-	margin: auto 30px;
+	margin: auto 10px;
 }
 
-.og-grid li a img{
-	-webkit-transition: all 4s;
+.og-grid li a img {
+	-webkit-transition: position 4s;
 }
 
-.og-grid li a:hover img{
-	top: -10px;
+.og-grid li a:hover .grid-info {
+	visibility: visible;
 }
 
 .photo {
@@ -217,6 +217,28 @@ a:hover {
 
 .slider {
 	margin: auto;
+}
+
+.grid-info {
+	position: absolute;
+	display: table;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -125px;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	background: rgba(51,51,51,0.8);
+	visibility: hidden;
+}
+
+.grid-info p, .grid-info h4 {
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 18px;
+	line-height: 18px;
 }
 
 #contact {
@@ -279,7 +301,7 @@ svg {
 		width: 20%;
 	}
 
-	div.container.about > div.photo > img{
+	div.container.about > div.photo > img {
 		-webkit-transition: all 1s linear 2s; /* For Safari 3.1 to 6.0 */
 		transition: all 1s linear 2s;
 		width: 200px;
