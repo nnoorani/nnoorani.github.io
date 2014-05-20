@@ -92,7 +92,6 @@ a:hover {
 }
 
 .about-column {
-	visibility: hidden;
 	padding: 25px;
 	color: #333;
 }
@@ -181,16 +180,16 @@ a:hover {
 }
 
 .og-grid li a {
-	visibility: hidden;
 	margin: auto 10px;
 }
 
 .og-grid li a img {
-	-webkit-transition: position 4s;
+	
 }
 
 .og-grid li a:hover .grid-info {
 	visibility: visible;
+	-webkit-transition: all 4s;
 }
 
 .photo {
