@@ -114,7 +114,7 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
         <div class='col-md-12'>
           <ul>
             <li class='col-md-6'>
-              <a class='link-box' href='resume/Noorain Noorani - S14.pdf'>see my resume</a>
+              <a class='link-box resume' href='resume/Noorain Noorani - S14.pdf'>see my resume</a>
             </li>
             <li class='col-md-6'>
               <a class='link-box link-box-2' href='#contact'>get in touch</a>
@@ -171,6 +171,15 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
     <script>
   $(function() {
     Grid.init();
+    $(document).on('ready', function() {
+      mixpanel.track("Landed");
+    });
+    $('.og-grid li a').click(function() {
+      mixpanel.track('Viewed Projects');
+    });
+    $('.resume').click(function(){
+      mixpanel.track('Viewed Resume');
+    });
   });
   </script>
   <script>
