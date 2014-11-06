@@ -248,6 +248,7 @@ svg {
 
 .project-row {
 	height: 400px;
+	background-size: cover;
 	opacity: 0.8;
 }
 
@@ -300,28 +301,32 @@ svg {
 }
 #buddy_up {
 	background-image: url('images/buddy-up-background.jpg');
-	background-size: cover;
+	background-color: #323232;
 }
 
 #glidr {
 	background-image: url('images/glidr-background copy.jpg');
-	background-size: cover;
+	background-color: #DEDEDE;
 }
 
 #soundmine {
 	background-image: url('images/soundmine-bg.jpg');
+	background-color: #BDE0DA;
 }
 
 #fitnesspal {
 	background-image: url('images/fitnesspal-bg.jpg');
+	background-color: #19BD9B;
 }
 
 #maps {
+	background-color: #D8D8D8;
 	background-image: url('images/maps-bg.jpg')
 }
 
 #storefront{
 	background-image: url('images/storefront-bg.jpg');
+	background-color: #666666;r
 }
 
 @media (max-width: 767px) {
@@ -366,5 +371,30 @@ svg {
 		-webkit-transition: all 1s linear 2s; /* For Safari 3.1 to 6.0 */
 		transition: all 1s linear 2s;
 		width: 200px;
+	}
+
+	#maps, #glidr, #storefront, #buddy_up, #fitnesspal, #soundmine {
+		background-image: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	#maps, #glidr, #storefront, #buddy_up, #fitnesspal, #soundmine {
+		background-image: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.no-margin-mobile {
+		margin: 0;
+	}
+	.padding-mobile-10 {
+		padding: 10px 0px;
+	}
+	.project-info {
+		margin-top: 0px;
+	}
+	.project-row {
+		height: auto;
 	}
 }
