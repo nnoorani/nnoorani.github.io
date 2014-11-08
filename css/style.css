@@ -50,7 +50,7 @@ h4 {
 
 p, a, li {
 	line-height: 30px;
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 300;
 }
 
@@ -114,6 +114,25 @@ a:hover {
 	color: #fff;
 	padding: 30px;
 	border-right: 1px solid #ccc;
+}
+
+
+.styled-link {
+	display: inline-block;
+	letter-spacing: 2px;
+	min-width: 12em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #333;
+	font-weight: 600;
+}
+
+.link-box {
+	background-color: #FFB03B;
+	padding: 13px;
+	margin: 20px 0px;
 }
 
 .link-box {
