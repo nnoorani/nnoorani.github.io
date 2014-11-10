@@ -33,23 +33,58 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
 
 <body>
   <title>Soundmine - My Projects</title>
-  <div class="container">
+  <div class="container tabs">
     <h3 class="navigation">Soundmine</h3>
+    <a class="styled-link linx-box-inverted center yellow" href="index.html">Back Home</a>
     <p>
-      Soundmine was one of the coolest projects I've ever worked on. I was a front-end developer and designer for this project, working with a team of 6. We created a pair of headphones, attached to which is an EEG sensor. This sensor reads brain signals and processes them into moods for the user wearing them. Based on this data, we suggest music to the user based on songs they've chosen or listened to other times when in the same mood.
+      Soundmine was one of the <i>coolest</i> projects I've ever worked on. I was a front-end developer and designer for this project, working with a team of 6. We created a pair of headphones, attached to which is an EEG sensor. This sensor reads brain signals and processes them into moods for the user wearing them. Based on this data, we suggest music to the user based on songs they've chosen or listened to other times when in the same mood.
     </p>
-    </br></br>
-    <p><i>Technologies: </i>FirebaseJS, TrueSense BioSensor, Sketch</p>
-    </br></br>
-    <div class="valign-top center">
-      <b>Web Design</b></br>
-      <img class="valign-top m20 iphone-border" width="400" src="css/images/soundmine-wireframe.jpg" />
-      <img class="valign-top m20 iphone-border" width="400" src="css/images/soundmine-iter1.png" />
-      <img class="valign-top m20 iphone-border" width="400" src="css/images/soundmine-iter2.png" />
-      <img class="valign-top m20 iphone-border" width="400" src="css/images/soundmine-final.png" />
-    </div>
-    <b>The Main View</b>
-    <p>Built to be a responsive webpage, the Soundmine application must primarily function as a music player. It provides suggestions along the side with feedback to the user about the moods we relate the song to. This allows the user to learn more about themselves while listening on the platform.
     </br>
+    <b>Technologies we used:</b>
+    <ul>
+      <li>TrueSense BioSensor</li>
+      <li>NodeJS</li>
+      <li>FirebaseJS</li>
+      <li>BinaryJS</li>
+      <li>Python Scipy</li>
+    </ul>
+    <div class="valign-top col-md-12 no-padding">
+      <b>Web Design</b></br></br>
+      <div class="col-md-3 center">
+        <img class="valign-top iphone-border col-md-12" src="css/images/soundmine-wireframe.jpg" />
+        <em>Initial Wireframe</em>
+      </div>
+      <div class="col-md-3 center">
+        <img class="valign-top iphone-border col-md-12" src="css/images/soundmine-iter1.png" />
+        <em>Iteration #1</em>
+      </div>
+      <div class="col-md-3 center">
+        <img class="valign-top iphone-border col-md-12" src="css/images/soundmine-iter2.png" />
+        <em>Iteration #2</em>
+      </div>
+      <div class="col-md-3 center">
+        <img class="valign-top iphone-border col-md-12" src="css/images/soundmine-final.png" />
+        <em>Final Design for MVP</em>
+      </div>
+    </div>
+    <div class="col-md-6">
+      </br></br>
+      <h4>Design</h4>
+      <p>Built to be a responsive webpage, the Soundmine application must primarily function as a music player. It provides suggestions along the side with feedback to the user about the moods we relate the song to. This allows the user to learn more about themselves while listening on the platform.
+      </br></br>
+      The team built out a roadmap for the features we wished to incorporate. These features evaluated the benefit to the customer as well as effort needed to build. A design was created and many discussions were had regarding how the final product may look. The current design, as seen above, is the MVP that the team decided was necessary for the product to launch.
+      </p>
+      </br>
+    </div>
+    <div class="col-md-6">
+      </br></br>
+      <h4>Development</h4>
+      <p>We built the web application using NodeJS. We used <a href="http://firebase.io">Firebase</a>
+        as our database as part of our initial prototypes. We used Github as our version control so the entire team could work on the project in sync. This allowed us to rapidly iterate and improve the structure of our web application as we added new features to our roadmap. Since the application streams music, we used a streaming library called BinaryJS to stream the music from the server to minimize load time and improve performance.
+      </br></br>
+
+      </p>
+      </br>
+    </div>
   </div>
 </body>
