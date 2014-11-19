@@ -7,7 +7,6 @@ body
 }
 
 h1 {
-	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -15,15 +14,15 @@ h1 {
 	margin: auto;
 	padding-top: 0px;
 	width: auto;
-	font-size: 4em;
+	font-size: 4vw;
 	opacity: 0.8;
-	letter-spacing: 20px;
+	letter-spacing: 10px;
 }
 
 h2 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 2em;
+	font-size: 2vw;
 	letter-spacing: 5px;
 	color: #FFB03B;
 	text-transform: uppercase;
@@ -35,7 +34,7 @@ h4 {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	color: #333;
-	margin: 15px 0;
+	margin: 7px 0;
 }
 
 h3 {
@@ -43,13 +42,12 @@ h3 {
 	letter-spacing: 3px;
 }
 h4 {
-	font-size: 24px;
-	margin-top: 15px;
+	font-size: 1em;
 	font-weight: 700;
 }
 
 p, a, li {
-	line-height: 30px;
+	line-height: 22px;
 	font-size: 1em;
 	font-weight: 300;
 }
@@ -81,25 +79,12 @@ a:hover, a.yellow {
 	margin-top: 60px;
 }
 
-.about, .work, .blog, .portfolio, .footer {
-	padding: 0 0 0;
-	margin: 0;
-	width: 100%;
-}
-
-.about-column {
-	padding: 25px;
-	color: #333;
-}
-
-.more-info {
-	padding: 0px;
-	margin-top: 50px;
-	background-color: #fafafa;
-}
-
 .text-white {
 	color: #fff;
+}
+
+.light-grey {
+	color: #aaa;
 }
 
 .upper {
@@ -109,12 +94,64 @@ a:hover, a.yellow {
 .underline {
 	text-decoration: underline;
 }
-.more {
-	color: #fff;
-	padding: 30px;
-	border-right: 1px solid #ccc;
+
+.text-align-right {
+	text-align: right;
 }
 
+.floatL {
+	float: left;
+	display: inline;
+}
+
+.floatR {
+	float: right;
+	display: inline;
+}
+
+.inline {
+	display: inline;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.padding-15 {
+	padding: 15px;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.valign-top {
+	vertical-align: top;
+}
+
+.ib {
+	display: inline-block;
+}
+
+.lm5 {
+	margin-left: 5px;
+}
+
+.rm5 {
+	margin-right: 5px;
+}
+
+.m5{
+	margin: 5px;
+}
+
+.m20 {
+	margin: 20px;
+}
+
+.m20top {
+	margin-top: 20px;
+}
 
 .styled-link {
 	display: inline-block;
@@ -122,7 +159,6 @@ a:hover, a.yellow {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	display: inline-block;
 	color: #333;
 	font-weight: 600;
 }
@@ -147,17 +183,7 @@ a:hover, a.yellow {
 	color: #fff;
 }
 
-.wrapper {
-	width: 100%;
-	min-height: 50px;
-	margin: auto;
-	overflow: hidden;
-	-webkit-transition: all 1s ease;
-	border-bottom:1px solid #eee;
-}
-
 .links {
-	text-align: center;
 	margin: 40px 0px 70px;
 }
 
@@ -179,35 +205,17 @@ a:hover, a.yellow {
     text-align:center;
 }
 
-.banner {
-	display: block;
-	width: 100%;
-	height: 150px;
-	background: url('images/76H.jpg') fixed;
-	background-size: cover;
-	background-color: #333;
-}
-
-.fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-.portfolio {
-	background-color: #f6f6f6;
-}
-
-.photo {
-	margin-top: 50px;
-}
-
 .line {
-	background: #FFB03B;
+	background: #AAAAAA;
+	opacity: 0.2;
 	height: 2px;
 	display: block;
-	width: 10%;
+	width: 90%;
 	margin: 10px auto 30px;
+}
+
+.iphone-border {
+	border: 1px solid #eee;
 }
 
 #projects {
@@ -247,94 +255,6 @@ svg {
 	margin: auto;
 }
 
-.project-row {
-	height: 400px;
-	background-size: cover;
-	opacity: 0.8;
-}
-
-.project-info {
-	margin-top: 40px;
-}
-.no-padding {
-	padding: 0px;
-}
-
-.align-left {
-	text-align: left;
-}
-
-.valign-top {
-	vertical-align: top;
-}
-.project-row:hover {
-	opacity: 1;
-}
-
-.floatL {
-	float: left;
-	display: inline;
-}
-
-.floatR {
-	float: right;
-	display: inline;
-}
-
-.inline {
-	display: inline;
-}
-
-.lm5 {
-	margin-left: 5px;
-}
-
-.rm5 {
-	margin-right: 5px;
-}
-
-.m20 {
-	margin: 20px;
-}
-
-.border {
-	border: 1px solid #eee;
-}
-#buddy_up {
-	background-image: url('images/buddy-up-background.jpg');
-	background-color: #323232;
-}
-
-#glidr {
-	background-image: url('images/glidr-background copy.jpg');
-	background-color: #DEDEDE;
-}
-
-#soundmine {
-	background-image: url('images/soundmine-bg.jpg');
-	background-color: #BDE0DA;
-}
-
-#fitnesspal {
-	background-image: url('images/fitnesspal-bg.jpg');
-	background-color: #19BD9B;
-}
-
-#maps {
-	background-color: #D8D8D8;
-	background-image: url('images/maps-bg.jpg')
-}
-
-#storefront{
-	background-image: url('images/storefront-bg.jpg');
-	background-color: #666666;
-}
-
-#designlab {
-	background-image: url('images/designlab.jpg');
-	background-color: #0B4A3E;
-}
-
 @media (max-width: 767px) {
 	h1 {
 		font-size: 36px;
@@ -344,17 +264,12 @@ svg {
 		font-size: 24px;
 	}
 
-	.more {
-		height: auto;
-		border-top: 1px solid #ccc;
-	}
-
 	.link-box {
 		width: 100%;
 		display: inline-block;
 		min-width: 20px;
+		margin: 10px 0;
 	}
-
 
 	.links a {
 		background-color: transparent;
@@ -370,7 +285,11 @@ svg {
 	}
 
 	.line {
-		width: 20%;
+		width: 60%;
+	}
+
+	.project-info {
+		display: none;
 	}
 
 	div.container.about > div.photo > img {
@@ -378,16 +297,13 @@ svg {
 		transition: all 1s linear 2s;
 		width: 200px;
 	}
-
+/*
 	#maps, #glidr, #storefront, #buddy_up, #fitnesspal, #soundmine {
 		background-image: none;
-	}
+	}*/
 }
 
 @media (max-width: 1200px) {
-	#maps, #glidr, #storefront, #buddy_up, #fitnesspal, #soundmine {
-		background-image: none;
-	}
 }
 
 @media (max-width: 1000px) {
@@ -396,11 +312,5 @@ svg {
 	}
 	.padding-mobile-10 {
 		padding: 10px 0px;
-	}
-	.project-info {
-		margin-top: 0px;
-	}
-	.project-row {
-		height: auto;
 	}
 }

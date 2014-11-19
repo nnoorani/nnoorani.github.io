@@ -33,70 +33,101 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
 
 <body>
   <title>Noorain Noorani</title>
-  <div class="container wrapper top-nav">
+  <div class="container-fluid wrapper">
       <!-- <img src='css/images/logo_1.png'></img> -->
-    <div class='container-fluid navigation'>
-      <h1 class="center">noorain noorani</h1>
-      <h2 class="center">Front-end Developer and UX/UI Designer</h2>
-      <div class='links container center col-md-12 col-xs-12'>
-        <a class='circle-text' href='http://www.github.com/nnoorani' target='_blank'><span class='fa fa-github fa-2x'></span></a>
-        <a class='circle-text' href='mailto:noorain.noorani@gmail.com'><span class='fa fa-envelope fa-2x'></span></a>
-        <a class='circle-text' href='http://www.twitter.com/noorainnoorani' target='_blank'><span class='fa fa-twitter fa-2x'></span></a>
-        <a class='circle-tex' href='http://www.linkedin.com/noorainnoorani' target='_blank'><span class='fa fa-linkedin fa-2x'></span></a>
+    <div class='navigation ib m20'>
+      <div class="ib col-md-11">
+        <h1 class="ib col-md-12 no-padding">noorain noorani</h1>
+        <h2 class="ib col-md-12 no-padding">UX/UI Designer and Developer</h2>
+      </div>
+      <ul class="ib top-nav col-md-1 col-xs-12">
+        <li><a href="#about" class="m5 styled-link light-grey">about</a></li>
+        <li><a href="#work" class="m5 styled-link light-grey">work</a></li>
+        <li><a href="resume/Noorain Noorani - Resume Summer 2014.pdf" class="m5 styled-link light-grey">resume</a></li>
+        <li><a href="#contact" class="m5 styled-link light-grey">contact</a></li>
       </div>
     </div>
   </div>
-  <div class='container portfolio' id='work'>
-    <div class='project-row col-md-12' id="fitnesspal">
-      <div class='project-info col-md-5 col-md-offset-1'>
-        <h4 class="no-padding no-margin-mobile padding-mobile-10">My Fitness Pal Redesign</h4>
-        <p class="no-padding align-left">
-          As an active user of this app, I began noticing many things I felt could be improved. I set about to find what other users thought of it, and used their feedback and suggestions to redesign the experience.
-        </p>
-        <a class='link-box styled-link link-box-inverted' href='fitness-pal.html'>view more</a>
+  <div class='container-fluid portfolio center' id='work'>
+    <div class="col-md-12">
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="fitnesspal" href="fitness-pal.html"><img width="100%" src="css/images/fitnesspal-bg.jpg"></img></a>
+        <div class="project-info">
+          <h4 class="no-padding no-margin-mobile padding-mobile-10">My Fitness Pal Redesign</h4>
+          <p class="no-padding center">
+            A redesign for a popular calorie counting app.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class='project-row col-md-12' id="soundmine">
-      <div class='project-info col-md-offset-5 col-md-5'>
-        <h4 class="no-padding no-margin-mobile padding-mobile-10">Soundmine</h4>
-        <p class="no-padding align-left">
-          Soundmine is a project that was developed for a 3rd year design course that provides customized music basic on brain signals. We built headphones that would read EEG signals from a user's forehead to determine a mood and to select a playlist of songs for the user.
-        </p>
-        <a class='link-box link-box-inverted styled-link' href='soundmine.html'>  view live
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="soundmine" href="soundmine.html"><img src="css/images/soundmine-bg.jpg" width="100%"/></a>
+        <div class="project-info">
+          <h4 class="no-padding no-margin-mobile padding-mobile-10">Soundmine</h4>
+          <p class="no-padding center">
+            A project for a 3rd year design course that provides customized music basic on brain signals.
+          </p>
+        </div>
+      </div>
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="storefront" href="storefront-tools.html"><img src="css/images/storefront-bg.jpg" width="100%"/></a>
+        <div class="project-info">
+          <h4 class="no-padding no-margin-mobile padding-mobile-10">Minted Storefront Tools</h4>
+          <p class="no-padding center">
+            A tool for designers that submit their work to Minted.
+          </p>
+        </div>
+      </div>
+      <div class="clearfix hidden-xs hidden-sm"></div>
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="designlab" href="designlab.html">
+          <img src="css/images/designlab.jpg" width="100%"></img>
         </a>
+        <div class="project-info">
+          <h4 class="no-padding no-margin-mobile padding-mobile-10">Design Lab</h4>
+          <p class="no-padding center">Projects from Design Lab <a href="http://trydesignlab.com" target="_blank">(www.trydesignlab.com)</a></p>
+        </div>
       </div>
-    </div>
-    <div class='project-row col-md-12' id="storefront">
-      <div class='project-info col-md-5 col-md-offset-1'>
-        <h4 class="no-padding no-margin-mobile padding-mobile-10">Minted Storefront Tools</h4>
-        <p class="no-padding align-left">
-          A new tool I designed and implemented for designers that submit to Minted.
-        </p>
-        <a class='link-box link-box-inverted styled-link' href='storefront-tools.html'>view more</a>
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="maps" href="maps-feature.html"><img  src="css/images/maps-bg.jpg" width="100%"/></a>
+        <div class="project-info">
+          <h4 class="no-padding no-margin-mobile padding-mobile-10">Google Maps Feature</h4>
+          <p class="no-padding center">
+            A flow for a new Google Maps feature.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class='project-row col-md-12' id="maps">
-      <div class='project-info col-md-offset-5 col-md-5'>
-        <h4 class="no-padding no-margin-mobile padding-mobile-10">Google Maps Feature</h4>
-        <p class="no-padding align-left">
-          I had an idea for a Google Maps feature I thought would be helpful - I talked to some users to get an idea of whether or not it was something they wanted. With some great feedback, I went ahead to mock up the experience.
-        </p>
-        <a class='styled-link link-box link-box-inverted' href='maps-feature.html'>view more</a>
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="buddyup" href="http://budyup.herokuapp.com" target="_blank"><img src="css/images/buddy-up-background.jpg" width="100%"/></a>
+        <div class="project-info">
+          <h4 class="no-margin-mobile padding-mobile-10">Buddy Up</h4>
+          <p class="no-padding">A hackathon project that allows you to connect with others that are studying the same thing as you.</p>
+        </div>
       </div>
-    </div>
-    <div class="center">
-      <a class='link-box styled-link center' href='projects.html'>view more projects</a>
+      <div class="clearfix hidden-xs hidden-sm"></div>
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="buddyup" href="https://blinding-fire-6122.firebaseapp.com/" target="_blank"><img src="css/images/tic-tac-toe-background.jpg" width="100%"/></a>
+        <div class="project-info">
+          <h4 class="no-margin-mobile padding-mobile-10">Tic Tac Toe</h4>
+          <p class="no-padding">A multiplayer tic-tact-toe game using Firebase. Grab a friend and play Tic Tac Toe</p>
+        </div>
+      </div>
+      <div class='col-md-4 col-xs-6 padding-15'>
+        <a class="buddyup" href="http://app.glidr.ca" target="_blank"><img src="css/images/glidr-background.jpg" width="100%"/></a>
+        <div class="project-info">
+          <h4 class="no-margin-mobile padding-mobile-10">Glidr</h4>
+          <p class="no-padding">A Startup Weekend project for random acts of kindness</p>
+        </div>
+      </div>
+
     </div>
   </div>
-  <div class='container about center' id='about'>
-  <h3 class="center">about me</h3>
+  <div class='container about' id='about'>
   <span class='line'></span>
-    <div class='photo'>
-      <img id='me' src="css/images/about-photo.png" width='200'></img>
-    </div>
-    <div class='col-md-12 center-block'>
-      <div class='col-md-8 col-md-offset-2 about-column'>
-        <p class='about-text'>
+  <h3 class="center m20">about me</h3>
+    <div class='col-md-12'>
+      <div class='col-md-10 col-md-offset-1 center'>
+        <img id='me' src="css/images/pp.jpg" class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4"></img>
+        <p class='about-text align-left m20top col-xs-12'>
         Hi! I'm Noorain, a 3rd year Waterloo student stuying Systems Design Engineering.
         I've interned at Minted, Wattpad and iotum, to name a few, as a web developer
         and software engineer. My experience is in both front-end and back-end
@@ -113,16 +144,14 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
         </br></br>
         <b>I am currently seeking an internship for May 2015 till September 2015.</b>
       </p>
-        <div class='col-md-12'>
-          <ul>
-            <li class="inline rm5">
-              <a class='link-box styled-link resume' href='resume/Noorain Noorani - Resume Summer 2014.pdf'>see my resume</a>
-            </li>
-            <li class="inline lm5">
-              <a class='link-box styled-link' href='#contact'>get in touch</a>
-            </li>
-          </ul>
-        </div>
+      <ul class="col-xs-12">
+        <li class="inline lm5 rm5">
+          <a class='link-box styled-link resume' href='resume/Noorain Noorani - Resume Summer 2014.pdf'>see my resume</a>
+        </li>
+        <li class="inline lm5 rm5">
+          <a class='link-box styled-link' href='#contact'>get in touch</a>
+        </li>
+      </ul>
       </div>
     </div>
   </div>
