@@ -64,7 +64,7 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
         <div class="project-info">
           <h4 class="no-padding no-margin-mobile padding-mobile-10">Soundmine</h4>
           <p class="no-padding center">
-            A project for a 3rd year design course that provides customized music basic on brain signals.
+            A project for a 3rd year design course that provides customized music based on brain signals.
           </p>
         </div>
       </div>
@@ -174,13 +174,10 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src='js/main.js'></script>
-    <script>
+  <script>
   $(function() {
     $(document).on('ready', function() {
       mixpanel.track("Landed");
-    });
-    $('.og-grid li a').click(function() {
-      mixpanel.track('Viewed Projects');
     });
     $('.resume').click(function(){
       mixpanel.track('Viewed Resume');
