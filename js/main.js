@@ -1,20 +1,19 @@
-// $(function() {
-//   $(window).scroll(function() {
-//     var self = this;
-//     this.topOfWindow = $(window).scrollTop();
-//     $('.about-column').each(function() {
-//     var imagePos = $(this).offset().top;
+$(function() {
+	if (!lastTop) {
+		var lastTop = 0;
+	}
 
-//       if (imagePos < self.topOfWindow+500) {
-//         $(this).addClass("animated fadeIn");
-//       }
-//     });
+  $(window).scroll(function() {
+    var top = $(this).scrollTop(),
+    		$nav = $('.nav');
+    if (top > lastTop && (top > 0)) {
+    	$nav.addClass('nav-hide');
+    	$nav.removeClass('nav-show');
+    } else {
+    	$nav.addClass('nav-show');
+    	$nav.removeClass('nav-hide');
+    }
 
-//     $('.og-grid > li > a').each(function() {
-//     var imagePos = $(this).offset().top;
-//       if (imagePos < self.topOfWindow+500) {
-//         $(this).addClass("animated fadeInDown");
-//       }
-//     });
-//   });
-// });
+    lastTop = top;
+  });
+});
