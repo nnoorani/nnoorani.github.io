@@ -5,7 +5,7 @@
 
 body
 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0px;
 }
 
@@ -19,8 +19,9 @@ h1 {
 h2 {
 	font-weight: 600;
 	font-family: 'Avenir', sans-serif;
-	color: #666;
-	font-size: 1.2em;
+	color: #333;
+	font-size: 1.4em;
+	margin-top: 10px;
 }
 
 h3 { font-family: 'Avenir'; font-size: 1.2em; text-transform: uppercase;}
@@ -73,5 +74,5 @@ nav > a {
 }
 
 @media (max-width: 1000px) {
-	.header-wrapper { top: 30; }
+	.header-wrapper { margin-top: 20px; }
 }
