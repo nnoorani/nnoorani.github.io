@@ -23,14 +23,14 @@ h2 {
 	font-size: 1.2em;
 }
 
-h3 { font-family: Avenir; font-size: 1.2em; text-transform: uppercase;}
+h3 { font-family: 'Avenir'; font-size: 1.2em; text-transform: uppercase;}
 h4 {
 	font-family: 'Lato', sans-serif;
 	color: #333;
 	margin: 7px 0;
 }
 
-.email, .resume { font-family: Avenir; font-size: 1.2em; font-weight: 600;}
+.email, .resume { font-family: 'Avenir'; font-size: 1.2em; font-weight: 600;}
 
 li {
 	list-style: none;
