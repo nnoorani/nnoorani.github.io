@@ -45,9 +45,6 @@ a:hover { text-decoration: none;}
 .column { float: left;}
 .size-1of2 { width: 50%; }
 
-
-.email, .resume { font-family: 'Avenir'; font-size: 1.2em; font-weight: 600;}
-
 /* header */
 .header { margin-bottom: 30px; }
 .header-wrapper { position: relative; margin: 5rem auto 60px; }
@@ -109,11 +106,15 @@ nav > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
 h1 { font-size: 2rem;}
 p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
 .header-wrapper { margin-top: 100px;}
-.mfp {height: 400px;}
-.designlab {height: 525px;}
-.minted {height: 400px;}
-.maps {height: 300px;}
+.mfp {height: 300px;}
+.designlab {height: 355px;}
+.minted {height: 280px;}
+.maps {height: 230px;}
+
+.project-info { top: 10px; padding: 10px 30px;}
 }
+
+
 
 @media (max-width: 1200px) {
 }
