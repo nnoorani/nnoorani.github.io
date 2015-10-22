@@ -48,7 +48,8 @@
 }
 
 .nav-toggle {
-  position: fixed;
+  background: url(../assets/hamburger.png) no-repeat center;
+  background-size: contain;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
@@ -60,33 +61,15 @@
   text-indent: -999px;
   position: relative;
   overflow: hidden;
-  width: 70px;
+  width: 50px;
   height: 55px;
   float: right;
+  top:15px;
 }
 
-.nav-toggle:before {
-  color: #333; /* Edit this to change the icon color */
-  font-family: "responsivenav", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  font-size: 28px;
-  text-transform: none;
-  position: absolute;
-  content: "=";
-  text-indent: 0;
-  text-align: center;
-  line-height: 55px;
-  speak: none;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.nav-toggle.active::before {
-  font-size: 24px;
-  content:"x";
+.nav-toggle.active {
+  background: url(../assets/close.png) no-repeat center;
+  background-size: 30px;
 }
 
 @media screen and (min-width: 40em) {

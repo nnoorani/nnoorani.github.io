@@ -36,7 +36,7 @@ li {
 	list-style: none;
 }
 a { text-decoration:  none; color: #00B5FF; }
-a:hover { text-decoration: none;}
+a:hover { text-decoration: none; color: #00b5ff;}
 
 #grid[data-columns]::before {
 	content: '2 .column.size-1of2';
@@ -59,13 +59,12 @@ nav > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid 
 /* nav */
 
 /* portfolio */
-.project { position: relative; margin: 0px 20px 40px; height: 100%;}
+.project { position: relative; margin: 0px 20px 40px;}
 .project > a { display: block; }
 .project > a:hover { 
 	opacity: 1;
 }
 .project-info {
-	position: absolute;
 	top: 20px;
 	padding: 30px;
 	color: #fff;
@@ -82,10 +81,10 @@ nav > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid 
 	margin-bottom: 20px;
 }
 
-.mfp {background: linear-gradient(#0072BC, #0A5282); height: 400px;}
-.designlab {background: linear-gradient(#2EA8CD, #1D708A); height: 525px;}
-.minted {background: linear-gradient(#8AAD3A, #64763B); height: 400px;}
-.maps {background: linear-gradient(#0EA460, #0EA460); height: 300px;}
+.mfp {background: linear-gradient(#0072BC, #0A5282);}
+.designlab {background: linear-gradient(#2EA8CD, #1D708A);}
+.minted {background: linear-gradient(#8AAD3A, #64763B);}
+.maps {background: linear-gradient(#0EA460, #0EA460);}
 
 /*about */
 .ib { display: inline-block; }
@@ -107,14 +106,10 @@ nav > ul > li { margin: 0 10px;}
 
 h1 { font-size: 2rem;}
 p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
-.mfp {height: 400px;}
-.designlab {height: 455px;}
-.minted {height: 380px;}
-.maps {height: 330px;}
 
 .project-info { top: 10px; padding: 10px 30px;}
 .project { margin: 0px 0px 40px;}
-.header-wrapper { position: relative; margin: 6rem auto 60px; }
+.header-wrapper { position: relative; margin: 8rem auto 60px; }
 nav > ul >li > a.active {border-bottom: none; }
 }
 
