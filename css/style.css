@@ -97,7 +97,8 @@ nav > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
 
 /* responsive styles*/
 @media (max-width: 767px) {
-.mobile-nav{ display: block;}
+nav { float: none;}
+nav > a { margin: 0 10px;}
 #grid[data-columns]::before {
 	content: '1 .column.size-1of1';
 }
@@ -106,13 +107,13 @@ nav > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
 
 h1 { font-size: 2rem;}
 p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
-.header-wrapper { margin-top: 100px;}
 .mfp {height: 400px;}
 .designlab {height: 455px;}
 .minted {height: 380px;}
 .maps {height: 330px;}
 
 .project-info { top: 10px; padding: 10px 30px;}
+.project { margin: 0px 0px 40px;}
 }
 
 
