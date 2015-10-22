@@ -53,9 +53,9 @@ a:hover { text-decoration: none;}
 .link-box { font-family: Avenir; border: 1px #00B5FF solid; color: #00B5FF; padding: 13px; font-weight: 100; margin: 30px auto;}
 .link-box:hover { text-decoration: none; background-color: #00B5FF; color: #fff ;}
 nav { float: right; margin: 5rem 5rem 1rem;}
-nav > a{ font-weight: 400; font-family: 'Lato'; font-size: 1.4rem; text-transform: uppercase; margin: 0px 20px; }
-nav > a:hover {opacity: 1; color: #00b5ff;}
-nav > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
+nav > ul > li{ font-weight: 400; font-family: 'Lato'; font-size: 1.4rem; text-transform: uppercase; margin: 0px 20px; display: inline-block;}
+nav > ul > li > a:hover {opacity: 1; color: #00b5ff;}
+nav > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
 /* nav */
 
 /* portfolio */
@@ -98,7 +98,7 @@ nav > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
 /* responsive styles*/
 @media (max-width: 767px) {
 nav { float: none;}
-nav > a { margin: 0 10px;}
+nav > ul > li { margin: 0 10px;}
 #grid[data-columns]::before {
 	content: '1 .column.size-1of1';
 }
@@ -115,6 +115,7 @@ p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
 .project-info { top: 10px; padding: 10px 30px;}
 .project { margin: 0px 0px 40px;}
 .header-wrapper { position: relative; margin: 5rem auto 60px; }
+nav > ul >li > a.active {border-bottom: none; }
 }
 
 

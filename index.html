@@ -5,6 +5,7 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script type="text/javascript" src='js/modernizr.custom.js'></script>
+  <link rel="stylesheet" href="css/responsive-nav.css">
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,20 +28,17 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
 <body>
   <title>Noorain Noorani</title>
   <div class="container-fluid header">
-    <nav class="center"> 
-      <a href="#work" class="ib active">work</a>
-      <!-- <a href="#about" class="ib">about</a> -->
-      <a href="assets/Noorain Noorani - Resume 2015.pdf" class="ib">resume</a>
-      <a href="#contact" class="ib">contact</a>
+    <nav class="center nav-collapse"> 
+      <ul>
+        <li><a href="#work" class="ib active">work</a></li>
+        <!-- <li><a href="#about" class="ib">about</a></li> -->
+        <li><a href="assets/Noorain Noorani - Resume 2015.pdf" class="ib">resume</a></li>
+        <li><a href="#contact" class="ib">contact</a></li>
+      </ul>
     </nav>
-    <div class="mobile-nav"> 
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-    </div>
     <div class="header-wrapper center col-md-8 col-md-push-2">
       <!-- <h1 class="center name">noorain noorani</h1> -->
-      <h1 class="center">Hi, I'm Noorain. I'm a product and UX designer in Toronto. </h1>
+      <h1 class="center">Hi, I'm Noorain. I'm a product and UX designer. </h1>
       <p class="col-md-12 about">
       Check out some things I've worked on. Most of my client work is confidential until released publicly, but <a href="mailto:noorain.noorani@gmail.com">get in touch</a> with me and I can show you. 
 
@@ -100,7 +98,9 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
       <a href='http://ca.linkedin.com/in/noorainnoorani/' target='_blank'><span class='fa fa-linkedin-square fa-2x'></span></a>
   </div>
 
+  <script type="text/javascript" src='js/responsive-nav.min.js'></script>
   <script type="text/javascript" src='js/masonry.min.js'></script>
+  <script src="js/responsive-nav.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src='js/main.js'></script>
   <script>
@@ -128,6 +128,11 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
     }
   });
 });
-  </script>
+</script>
 
+<script>
+  var nav = responsiveNav(".nav-collapse", {
+    label: ""
+  });
+</script>
 </body>
