@@ -107,10 +107,10 @@ nav > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
 h1 { font-size: 2rem;}
 p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
 .header-wrapper { margin-top: 100px;}
-.mfp {height: 350px;}
-.designlab {height: 405px;}
-.minted {height: 330px;}
-.maps {height: 280px;}
+.mfp {height: 400px;}
+.designlab {height: 455px;}
+.minted {height: 380px;}
+.maps {height: 330px;}
 
 .project-info { top: 10px; padding: 10px 30px;}
 }
