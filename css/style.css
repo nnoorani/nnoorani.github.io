@@ -47,7 +47,7 @@ a:hover { text-decoration: none;}
 
 /* header */
 .header { margin-bottom: 30px; }
-.header-wrapper { position: relative; margin: 5rem auto 60px; }
+.header-wrapper { position: relative; margin: 15rem auto 60px; }
 .about { line-height: 2; margin-top: 20px; }
 .fa { padding: 10px; color: #333;}
 .link-box { font-family: Avenir; border: 1px #00B5FF solid; color: #00B5FF; padding: 13px; font-weight: 100; margin: 30px auto;}
@@ -114,6 +114,7 @@ p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
 
 .project-info { top: 10px; padding: 10px 30px;}
 .project { margin: 0px 0px 40px;}
+.header-wrapper { position: relative; margin: 5rem auto 60px; }
 }
 
 
