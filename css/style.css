@@ -7,7 +7,6 @@ body
 {
 	font-family: 'Droid Serif', serif;
 	font-size: 1.8rem;
-	line-height: 3.8rem;
 	margin: 0px;
 }
 
@@ -20,15 +19,15 @@ h1 {
 
 h2 {
 	font-weight: 600;
-	font-family: 'Avenir', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: #333;
 	font-size: 1.4em;
 	margin-top: 10px;
 }
 
-h3 { font-family: 'Avenir'; font-size: 1.2em; text-transform: uppercase;}
+h3 { font-family: 'Lato'; font-weight: 600; font-size: 1.4rem; margin-bottom: 40px; padding-bottom: 10px; text-transform: uppercase; display: inline-block; border-bottom: 3px solid}
 
-h4{
+h4, h5{
 	font-family: 'Lato', sans-serif;
 }
 
@@ -52,10 +51,14 @@ a:hover { text-decoration: none; color: #00b5ff;}
 .fa { padding: 10px; color: #333;}
 .link-box { font-family: Avenir; border: 1px #00B5FF solid; color: #00B5FF; padding: 13px; font-weight: 100; margin: 30px auto;}
 .link-box:hover { text-decoration: none; background-color: #00B5FF; color: #fff ;}
-nav { float: right; margin: 5rem 5rem 1rem;}
-nav > ul > li{ font-weight: 400; font-family: 'Lato'; font-size: 1.4rem; text-transform: uppercase; margin: 0px 20px; display: inline-block;}
-nav > ul > li > a:hover {opacity: 1; color: #00b5ff;}
-nav > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
+nav.home{ float: right; margin: 5rem 5rem 1rem;}
+nav.home > ul > li{ font-weight: 400; font-family: 'Lato'; font-size: 1.4rem; text-transform: uppercase; margin: 0px 20px; display: inline-block;}
+nav.home > ul > li > a:hover {opacity: 1; color: #00b5ff;}
+nav.home > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid #00b5ff;}
+
+nav.case-study { float: left; margin: 4rem 4rem 1rem; color: #fff;}
+nav.case-study > a >img { width: 40px;}
+nav.case-study > a {color: #333;}
 /* nav */
 
 /* portfolio */
@@ -64,27 +67,42 @@ nav > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid 
 .project > a:hover { 
 	opacity: 1;
 }
+
 .project-info {
+	text-align: center;
 	top: 20px;
 	padding: 30px;
 	color: #fff;
-	opacity: 0.7;
 }
+
+.project-info > p { padding-bottom: 30px;}
 
 .project-info > h4 {
+	font-family: "Lato", sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	letter-spacing: 2.6;
 	font-size: 1.3rem;
-	font-weight: 400;
+	font-weight: 300;
 	color: #fff;
-	opacity: 0.7;
-	margin-bottom: 20px;
+	padding: 30px 0 40px;
+	text-align: center;
 }
 
-.mfp {background: linear-gradient(#0072BC, #0A5282);}
-.designlab {background: linear-gradient(#2EA8CD, #1D708A);}
-.minted {background: linear-gradient(#8AAD3A, #64763B);}
-.maps {background: linear-gradient(#0EA460, #0EA460);}
+.virgin { background-image: url("../assets/virgin-bg.jpg"); background-size: cover}
+.triplust { background-image: url("../assets/triplust-bg.jpg"); background-size: cover}
+.mfp { background-image: url("../assets/mfp-bg.jpg"); background-size: cover}
+.designlab { background-image: url("../assets/designlab-bg.jpg"); background-size: cover }
+.minted { background-image: url("../assets/minted-bg.jpg"); background-size: cover }
+.maps { background-image: url("../assets/maps-bg.jpg"); background-size: cover }
+
+.overlay { position: relative; top: 0; width: 100%; }
+.overlay-blue { background-color: rgba(52, 152, 219,0.9)}
+.overlay-dark-blue { background-color: rgba(41, 128, 185,0.9)}
+.overlay-dark-green { background-color: rgba(39, 174, 96,0.9)}
+.overlay-orange { background-color: rgba(230, 126, 34,0.9)}
+.overlay-green { background-color: rgba(46, 204, 113,0.8)}
+.overlay-turquoise { background-color: rgba(26, 188, 156,0.8)}
+.overlay-yellow { background-color: rgba(241, 196, 15,0.8)}
 
 /*about */
 .ib { display: inline-block; }
@@ -93,6 +111,73 @@ nav > ul >li > a.active {font-weight: 600; opacity: 1; border-bottom: 3px solid 
 /*social*/
 .social {padding-bottom: 30px;}
 
+/*case study pages*/
+.case-study-header{
+	padding:150px;
+	margin: 0;
+	color: #fff;
+	background-position: center;
+}
+
+.case-study-header > .overlay > h4 {
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+}
+
+.case-study-header > .overlay > h5 {
+	font-weight: 300; 
+	font-size: 1.5rem;
+	opacity: 0.7;
+	margin: 15px auto;
+}
+
+.case-study-header > .overlay {
+	position: relative; top: 0; width: 100%;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.case-study {
+	line-height: 3.5rem;
+}
+
+.case-study p {
+	padding-bottom: 10px;
+}
+
+h4.section-header {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #aaa;
+	padding: 15px 0 5px;
+}
+
+h4.section-header::first{
+	padding-top: 15px;
+}
+
+.case-study-image {
+	margin-bottom: 40px;
+}
+
+p.goal {
+	font-style: italic;
+	padding: 40px 100px;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #bbb;
+}
 
 /* responsive styles*/
 @media (max-width: 767px) {
@@ -105,9 +190,8 @@ nav > ul > li { margin: 0 10px;}
 .size-1of1 { width: 100%; }
 
 h1 { font-size: 2rem;}
-p { font-size: 1.5rem; line-height: 2.5rem; opacity: 1;}
 
-.project-info { top: 10px; padding: 10px 30px;}
+.project-info { top: 10px; padding: 10px 30px;
 .project { margin: 0px 0px 40px;}
 .header-wrapper { position: relative; margin: 8rem auto 60px; }
 nav > ul >li > a.active {border-bottom: none; }

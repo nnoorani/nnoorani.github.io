@@ -2,7 +2,7 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Lato:400,100,300,700,900|Oswald:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script type="text/javascript" src='js/modernizr.custom.js'></script>
   <link rel="stylesheet" href="css/responsive-nav.css">
@@ -28,7 +28,7 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
 <body>
   <title>Noorain Noorani</title>
   <div class="container-fluid header">
-    <nav class="center nav-collapse"> 
+    <nav class="center nav-collapse home"> 
       <ul>
         <li><a href="#work" class="ib active">work</a></li>
         <!-- <li><a href="#about" class="ib">about</a></li> -->
@@ -42,53 +42,94 @@ mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
       <p class="col-md-12 about">
        Check out a few pieces of my work. Most of my work is under wraps and can't be posted online just yet, but <a href="mailto:noorain.noorani@gmail.com">get in touch</a> with me and I can show you. 
 
-      </br><b>I am currently looking for a full-time position for May 2016.</b></p>
     </div>
   </div>
   <div class='container-fluid center' id='work'>
     <div class="col-md-12">
+      <h3>Projects: Case studies</h3>
     </div>
     <div class="col-md-8 col-md-push-2" id="grid" data-columns>
+      <div class='project virgin'>
+        <a class="fitnesspal" href="virgin.html">
+          <div class="overlay overlay-yellow">
+            <div class="project-info">
+              <h4 class="">Virgin Mobile</h4>
+              <p class="">
+                The complete design process of the Virgin Mobile MyBenefits mobile applications.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class='project triplust'>
+        <a class="fitnesspal" href="travel-app.html">
+          <div class="overlay overlay-turquoise">
+            <div class="project-info">
+              <h4>Travel App</h4>
+              <p class="text-center">
+                An MVP prototype for an app to help you travel like a local.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
       <div class='project mfp'>
-        <a class="fitnesspal" href="assets/my-fitness-pal.pdf">
-          <div class="project-info">
-            <h4 class="text-left">MyFitnessPal Redesign</h4>
-            <p class="no-padding text-left">
-              I went through an end-to-end process of redesigning the popular calorie tracking app, MyFitnessPal. I conducted user research, wireframed and prototyped a new solution to the problems I found with the current iOS application.
-            </p>
+        <a class="fitnesspal" href="fitness-pal.html">
+          <div class="overlay overlay-blue">
+            <div class="project-info">
+              <h4 class="">Side Project: MyFitnessPal</h4>
+              <p class="">
+                An end-to-end, unsolicited redesign of the popular MyFitnessPal app.
+              </p>
+            </div>
           </div>
         </a>
       </div>
       <div class='project designlab'>
-        <a class="designlab" href="assets/designlab.pdf">
-        <div class="project-info">
-          <h4 class="text-left">Designlab - UX Academy</h4>
-          <p class="no-padding text-left">Designlab, a company offering mentored online design courses, released a new product offering called UX Academy. With this, they introduced two new levels to the course architecture. I was responsible for handling the user experience related to adding these new levels into the existing course structure and layout.
-        </div>
+        <a class="designlab" href="designlab.html">
+          <div class="overlay overlay-dark-blue">
+            <div class="project-info">
+              <h4 class="">Designlab</h4>
+              <p class="">Creating the experience for a new product offering at Designlab.
+            </div>
+          </div>
         </a>
       </div>
       <div class='project minted'>
-        <a class="storefront" href="assets/minted.pdf">
-        <div class="project-info">
-          <h4 class="text-left">Minted - Storefront Tool</h4>
-          <p class="no-padding text-left">
-            Designers on Minted have a storefront where all their products are visible. I designed and implemented a new tool that would allow them to customize the first three items appearing in their store.
-          </p>
-        </div>
+        <a class="storefront" href="minted.html">
+          <div class="overlay overlay-green">
+            <div class="project-info">
+              <h4 class="">Minted</h4>
+              <p class="no-padding">
+                Designing a new store customization tool.
+              </p>
+            </div>
+          </div>
         </a>
       </div>
-      <div class='project maps'>
-        <a class="maps" href="assets/google-maps.pdf">
-        <div class="project-info">
-          <h4 class="text-left">Google Maps - Feature Concept</h4>
-          <p class="no-padding text-left">
-          I designed the flow for a new feature in Google Maps that allows you to find or explore destinations on your ongoing route.
-          </p>
-        </div>
+      <!-- <div class='project maps'>
+        <a class="maps" href="google-maps.html">
+          <div class="overlay overlay-dark-green">
+            <div class="project-info">
+              <h4 class="">Side Project: Google Maps</h4>
+              <p class="no-padding">
+              Wireframing a new feature concept for Google Maps.
+              </p>
+            </div>
+          </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
+<!-- 
+  <div class="container-fluid other-projects center">
+    <h3>Other Work</h3>
+    <div class="col-md-12">
+      <div class="col-md-3">  
+        <h4>Athletic Tournament Proposal</h4>
+        <p>Website Design and Development</p>
+    </div>
+  </div> -->
 
   <div class="container social center" id="contact">
       <a class='email' href='mailto:noorain.noorani@gmail.com'>noorain.noorani@gmail.com</a>
